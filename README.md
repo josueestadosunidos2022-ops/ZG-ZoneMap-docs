@@ -2,11 +2,11 @@
 
 ## English
 
-RPG world and cave map with synchronized markers. Minecraft 1.20.1 / Forge 47.x. The current line is beta; keep it separate from stable releases.
+RPG world and cave map with HUD, radar, local tile cache and synchronized markers. Minecraft 1.20.1 / Forge 47.x. Current protected pair: **Server + Client 1.0.0-beta1** in one CurseForge project.
 
 ### Installation
 
-Install the labeled server JAR on the server and its compatible client JAR on players' clients. Both files belong to the same CurseForge project. The two version numbers may differ; follow the stated pair, never mix releases. Required mod dependencies shown by current source metadata: **ZoneCore**. Check the dependency version range of the exact uploaded file before installation.
+Install the labeled server JAR on the server and client JAR on players' clients. Never place both in one `mods` folder. The server requires **ZoneCore 2.1.2+**; the client does not. ZoneLevelUp beta25, ZoneGuardian, ZoneProtes, ZoneClans and Waystones integrations are optional. ZoneProtes itself needs its own matching client/server pair when installed.
 
 ### Configuration
 
@@ -21,11 +21,11 @@ See [configuration reference](CONFIGURATION.md) for keys detected in source and 
 
 ## Español
 
-Mapa RPG de superficie y cuevas con marcadores sincronizados. Minecraft 1.20.1 / Forge 47.x. La línea actual es beta; mantenla separada de las entregas estables.
+Mapa RPG de superficie y cuevas con HUD, radar, caché de teselas y marcadores sincronizados. Minecraft 1.20.1 / Forge 47.x. Pareja protegida actual: **Server + Client 1.0.0-beta1** en un proyecto CurseForge.
 
 ### Instalación
 
-Instala el JAR marcado servidor en el servidor y su JAR cliente compatible en los clientes. Ambos archivos pertenecen al mismo proyecto CurseForge. Los números de versión pueden diferir; respeta la pareja indicada y no mezcles entregas. Dependencias obligatorias indicadas por los metadatos actuales: **ZoneCore**. Comprueba el rango de versión del archivo exacto que instales.
+Instala el JAR servidor en el servidor y el cliente en los jugadores. Nunca pongas ambos en la misma carpeta `mods`. El servidor requiere **ZoneCore 2.1.2+**; el cliente no. Las integraciones con ZoneLevelUp beta25, ZoneGuardian, ZoneProtes, ZoneClans y Waystones son opcionales. ZoneProtes exige su propia pareja cliente/servidor cuando se instala.
 
 ### Configuración
 

@@ -1,4 +1,4 @@
-# ZG ZoneMap — releases / entregas
+# ZoneMap — releases / entregas
 
 ## 1.0.0-beta1 · 2026-10-10
 

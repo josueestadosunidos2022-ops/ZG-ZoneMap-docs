@@ -1,4 +1,4 @@
-# ZG ZoneMap
+# ZoneMap
 
 ## Update / Actualización — 2026-10-17
 

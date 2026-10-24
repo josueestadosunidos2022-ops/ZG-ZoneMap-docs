@@ -1,15 +1,15 @@
 # ZoneMap
 
-## Current update / Actualización actual — 2026-10-23
+## Current update / Actualización actual — 2026-10-24
 
 Protected public builds prepared for Minecraft 1.20.1 / Forge 47.4.x / Java 17. Files become available after CurseForge approval. / Compilaciones públicas protegidas; los archivos estarán disponibles cuando CurseForge los apruebe.
 
-Improves client height layers and underground exploration, with world map, HUD minimap, radar and markers. Server controls shared markers and permissions. Keeps zonemap-3 protocol; only chunks received by the client are mapped.
+Beta21 adds texture-based terrain detail, relief and biome colors, ZMT9 local-cache renewal, cave-height preview and saturation, brightness and HUD-shape controls. Keeps zonemap-3; only received chunks are mapped. / Beta21 añade detalle de texturas, relieve y colores de bioma, caché ZMT9, vista previa por altura y controles de saturación, brillo y forma del HUD. Conserva zonemap-3; solo cartografía chunks recibidos.
 
 | Side / Lado | Version / Versión | File / Archivo |
 |---|---|---|
-| server | 1.0.0-beta16 | `zonemap-server-1.0.0-beta16-protected.jar` |
-| client | 1.0.0-beta16 | `zonemap-client-1.0.0-beta16-protected.jar` |
+| server | 1.0.0-beta21 | `zonemap-server-1.0.0-beta21-protected.jar` |
+| client | 1.0.0-beta21 | `zonemap-client-1.0.0-beta21-protected.jar` |
 
 Install only the JAR for each side; never put both side JARs in one mods folder. Back up the world and preserve existing player data and TOML files. / Instala solo el JAR correspondiente a cada lado; conserva mundo, progreso y TOML existentes.
 

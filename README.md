@@ -1,72 +1,34 @@
-# ZoneMap
-
-## Current update / Actualización actual — 2026-10-24
-
-Protected public builds prepared for Minecraft 1.20.1 / Forge 47.4.x / Java 17. Files become available after CurseForge approval. / Compilaciones públicas protegidas; los archivos estarán disponibles cuando CurseForge los apruebe.
-
-Beta21 adds texture-based terrain detail, relief and biome colors, ZMT9 local-cache renewal, cave-height preview and saturation, brightness and HUD-shape controls. Keeps zonemap-3; only received chunks are mapped. / Beta21 añade detalle de texturas, relieve y colores de bioma, caché ZMT9, vista previa por altura y controles de saturación, brillo y forma del HUD. Conserva zonemap-3; solo cartografía chunks recibidos.
-
-| Side / Lado | Version / Versión | File / Archivo |
-|---|---|---|
-| server | 1.0.0-beta21 | `zonemap-server-1.0.0-beta21-protected.jar` |
-| client | 1.0.0-beta21 | `zonemap-client-1.0.0-beta21-protected.jar` |
-
-Install only the JAR for each side; never put both side JARs in one mods folder. Back up the world and preserve existing player data and TOML files. / Instala solo el JAR correspondiente a cada lado; conserva mundo, progreso y TOML existentes.
-
-**server dependencies / dependencias:** ZoneCore: Required Dependency ([2.1.2,3)).
-
-**client dependencies / dependencias:** No additional Zone dependency / Sin dependencia adicional de Zone.
-
-Archive checks and isolated dedicated-server startup do not certify graphical gameplay, real multiplayer or the full modpack. / Las verificaciones de archivo y arranque aislado no certifican cliente gráfico, multijugador real ni modpack completo.
-
-## Earlier reference / Referencia anterior
-
-The following reference predates this update. Use the current versions and side instructions above when they differ. / La referencia siguiente es anterior; prevalecen las versiones y las indicaciones de lado de esta actualización.
-
-## Update / Actualización — 2026-10-17
-
-Selected version / Versión seleccionada: **server 1.0.0-beta11 / client 1.0.0-beta11**. New file availability depends on CurseForge approval / La disponibilidad de los archivos nuevos depende de su aprobación en CurseForge.
-
-See [changes, exact files and installation](UPDATES-2026-10-17.md) / Consulta [cambios, archivos e instalación](UPDATES-2026-10-17.md). Preserve the world and TOML files / Conserva mundo y TOML.
+# ZoneMap 1.0.0-beta31
 
 ## English
 
-RPG world and cave map with HUD, radar, local tile cache and synchronized markers. Minecraft 1.20.1 / Forge 47.x. Current protected pair: **Server + Client 1.0.0-beta11** in one CurseForge project.
-
-### Installation
-
-Install the labeled server JAR on the server and client JAR on players' clients. Never place both in one `mods` folder. The server requires **ZoneCore 2.1.2+**; the client does not. ZoneLevelUp beta29-r10, ZoneGuardian, ZoneProtes, ZoneClans and Waystones integrations are optional. ZoneProtes itself needs its own matching client/server pair when installed.
-
-### Configuration
-
-Edit generated TOML files while the server or game is stopped unless a documented reload command is available. Back up persistent data before updates.
-
-| Config file | Use |
-|---|---|
-| `zonemap-client.toml` | Verify the exact generated path and options for the selected release. |
-| `zonemap-server.toml` | Verify the exact generated path and options for the selected release. |
-
-See [configuration reference](CONFIGURATION.md) for keys detected in source and [release compatibility](RELEASES.md) for version-pair rules.
+RPG map, cave views, radar and persistent shared markers. Beta31 removes surface overlays from cave views, rejects old cave tiles until rescanned, and uses ZMT16 without deleting surface maps or markers. Both file metadata and manifests identify beta31; network protocol remains zonemap-3. Keep caches and markers; old cave tiles rebuild from received chunks.
 
 ## Español
 
-Mapa RPG de superficie y cuevas con HUD, radar, caché de teselas y marcadores sincronizados. Minecraft 1.20.1 / Forge 47.x. Pareja protegida actual: **Server + Client 1.0.0-beta11** en un proyecto CurseForge.
+Mapa RPG, vistas de cuevas, radar y marcadores persistentes. Beta31 elimina referencias de superficie en cuevas y rechaza mosaicos antiguos hasta volver a escanearlos; utiliza ZMT16 y conserva superficie y marcadores. Se corrigió el número beta30 heredado en los metadatos de ambos JAR para identificar beta31. El protocolo sigue siendo zonemap-3.
 
-### Instalación
 
-Instala el JAR servidor en el servidor y el cliente en los jugadores. Nunca pongas ambos en la misma carpeta `mods`. El servidor requiere **ZoneCore 2.1.2+**; el cliente no. Las integraciones con ZoneLevelUp beta29-r10, ZoneGuardian, ZoneProtes, ZoneClans y Waystones son opcionales. ZoneProtes exige su propia pareja cliente/servidor cuando se instala.
+| Side / Lado | Version | File |
+|---|---|---|
+| server | 1.0.0-beta31 | `zonemap-server-1.0.0-beta31-protected.jar` |
+| client | 1.0.0-beta31 | `zonemap-client-1.0.0-beta31-protected.jar` |
 
-### Configuración
+## Dependencies / Dependencias
 
-Edita los TOML generados con el servidor o juego detenido, salvo que exista un comando de recarga documentado. Respalda los datos persistentes antes de actualizar.
+- **server**: zonecore: Required Dependency ([2.1.2,3))
+- **client**: No additional mod requirement / Sin requisitos adicionales
 
-| Archivo de configuración | Uso |
-|---|---|
-| `zonemap-client.toml` | Comprueba la ruta y opciones generadas de la entrega elegida. |
-| `zonemap-server.toml` | Comprueba la ruta y opciones generadas de la entrega elegida. |
+## Installation / Instalación
 
-Consulta la [referencia de configuración](CONFIGURATION.md) para claves detectadas en el código y la [compatibilidad de entregas](RELEASES.md) para las parejas de versiones.
+Install only the file for each side. Never mix two versions or both side distributions in one mods folder. Back up the world and preserve TOML/player data. Dedicated-server-only mods do not belong in a client modpack.
+
+Instala solo el archivo del lado correspondiente. No mezcles versiones ni ambos JAR en una carpeta mods. Respalda mundo y conserva TOML/progreso. Los mods exclusivos de servidor no van en el modpack de cliente.
+
+Protected public files retain features without distributing private source, mappings or production configuration/account data. File/resources/shared schemas and isolated server startup/clean save were checked; no new GUI/full-modpack or live multiplayer test was performed. File availability depends on CurseForge approval.
+
+Los archivos públicos conservan funciones con protección, sin fuentes, mappings ni datos privados. Se verificaron archivos/esquemas y arranque/cierre local aislado; no una nueva prueba gráfica o multijugador real. Disponibilidad sujeta a aprobación de CurseForge.
 
 ## Ownership / Titularidad
 
-Documentation and original ZONE visual assets © Elgochogms. This repository contains documentation and a project avatar only; it does not distribute mod source code, private mappings, server secrets or production configuration.
+Original ZONE code and artwork © Elgochogms. All Rights Reserved. Public documentation repository only; source and mappings remain private.

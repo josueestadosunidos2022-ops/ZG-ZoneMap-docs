@@ -1,18 +1,17 @@
-# ZoneMap 1.0.0-beta31
+# ZoneMap 1.0.0-beta34
 
 ## English
 
-RPG map, cave views, radar and persistent shared markers. Beta31 removes surface overlays from cave views, rejects old cave tiles until rescanned, and uses ZMT16 without deleting surface maps or markers. Both file metadata and manifests identify beta31; network protocol remains zonemap-3. Keep caches and markers; old cave tiles rebuild from received chunks.
+RPG top-down map, cave views, radar and persistent shared markers. Beta34 adds sharper rendering, corrected foliage/top-face colors, coordinate-anchored unexplored fog, natural/vivid palettes and adjustable height-based 2.5D relief. It preserves compatible cache and markers; received chunks update gradually without forcing exploration. This is not a tilted 3D camera. Cache format ZMT19; network remains zonemap-3.
 
 ## Español
 
-Mapa RPG, vistas de cuevas, radar y marcadores persistentes. Beta31 elimina referencias de superficie en cuevas y rechaza mosaicos antiguos hasta volver a escanearlos; utiliza ZMT16 y conserva superficie y marcadores. Se corrigió el número beta30 heredado en los metadatos de ambos JAR para identificar beta31. El protocolo sigue siendo zonemap-3.
-
+Mapa RPG cenital, cuevas, radar y marcadores persistentes. Beta34 mejora la nitidez, corrige colores de follaje/caras superiores y añade niebla anclada a coordenadas, paletas natural/viva y relieve 2.5D regulable. Conserva cachés compatibles y marcadores; actualiza gradualmente chunks recibidos sin forzar exploración. No es una cámara 3D inclinada. Caché ZMT19; canal zonemap-3.
 
 | Side / Lado | Version | File |
 |---|---|---|
-| server | 1.0.0-beta31 | `zonemap-server-1.0.0-beta31-protected.jar` |
-| client | 1.0.0-beta31 | `zonemap-client-1.0.0-beta31-protected.jar` |
+| server | 1.0.0-beta34 | `zonemap-server-1.0.0-beta34-protected.jar` |
+| client | 1.0.0-beta34 | `zonemap-client-1.0.0-beta34-protected.jar` |
 
 ## Dependencies / Dependencias
 

@@ -1,4 +1,19 @@
-# ZoneMap 1.0.0-beta34
+# ZoneMap
+
+## Current builds / Versiones actuales — 2026-11-03
+
+| Side / Lado | Version / Versión | CurseForge |
+|---|---|---|
+| ZoneMap server | 1.0.0-beta35 | [Files / Archivos](https://www.curseforge.com/minecraft/mc-mods/zonemap/files/9426583) |
+| ZoneMap client | 1.0.0-beta35 | [Files / Archivos](https://www.curseforge.com/minecraft/mc-mods/zonemap/files/9426591) |
+
+[Changes, installation and compatibility / Cambios, instalación y compatibilidad](RELEASE-2026-11-03.md).
+
+Public protected Beta builds. A submitted file becomes downloadable only after CurseForge approval. / Betas públicas protegidas: cada archivo queda descargable cuando CurseForge lo aprueba.
+
+## Earlier documentation / Documentación anterior
+
+The version and side table above takes precedence over historical versions below. / La tabla anterior prevalece sobre versiones históricas de la documentación siguiente.
 
 ## English
 
